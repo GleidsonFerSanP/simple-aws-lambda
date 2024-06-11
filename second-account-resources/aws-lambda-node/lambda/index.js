@@ -4,7 +4,7 @@ const sns = new AWS.SNS();
 exports.handler = async (event) => {
   const params = {
     Message: "Hello from Lambda!", // Message to be sent
-    TopicArn: "arn:aws:sns:us-east-1:992382412051:cross-account-test", // Replace with your SNS topic ARN
+    TopicArn: "arn:aws:sns:us-east-1:992382412051:my-first-sns-topic", // Replace with your SNS topic ARN
   };
 
   try {
